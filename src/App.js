@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <SummaryForm />
-      <Options optionType="scoops" />
+      <Options optionType="toppings" />
     </div>
   );
 }
