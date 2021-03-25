@@ -6,6 +6,7 @@ import axios from 'axios';
 import Row from 'react-bootstrap/Row';
 import { pricePerItem } from '../../constants';
 import { useOrderDetails } from '../../contexts/OrderDetails';
+import { formatCurrency } from '../../utils';
 
 function Options({ optionType }) {
   const [items, setItems] = useState([]);
@@ -40,7 +41,7 @@ function Options({ optionType }) {
   return (
     <>
       <h2>{title}</h2>
-      <p>{pricePerItem[optionType]}$ each</p>
+      <p>{formatCurrency(pricePerItem[optionType])} each</p>
       <p>
         {title} total: {orderDetails.totals[optionType]}
       </p>

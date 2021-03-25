@@ -1,4 +1,4 @@
 body {
-  background-color: teal;
-  color: ivory;
+  background-color: teal !important;
+  color: ivory !important;
 }
