@@ -46,6 +46,11 @@ test('Order phases for happy path', async () => {
   expect(screen.getByText('2 Chocolate')).toBeInTheDocument();
   expect(screen.getByText('Cherries')).toBeInTheDocument();
 
+  // // alternatively...
+  // // const optionItems = screen.getAllByRole('listitem');
+  // // const optionItemsText = optionItems.map((item) => item.textContent);
+  // // expect(optionItemsText).toEqual(['1 Vanilla', '2 Chocolate', 'Cherries']);
+
   // accept terms and click button
   const tcCheckbox = screen.getByRole('checkbox', {
     name: /terms and conditions/i,
